@@ -1,3 +1,4 @@
+import Contact from "@/components/contact/Contact";
 import Hero from "@/components/home/Hero";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
       <p>Services</p>
       <p>Features</p>
       <p>Testimonials</p>
-      <p>contact</p>
+      <Contact />
     </section>
   );
 }

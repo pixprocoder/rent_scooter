@@ -1,51 +1,55 @@
+"use client";
+import Image from "next/image";
 import Link from "next/link";
-import { FaUser } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross1 } from "react-icons/rx";
+import { useState } from "react";
+import { navLinks } from "@/constants";
 
 const Navbar = () => {
-  const user = true;
+  const [open, setOpen] = useState(false);
   return (
-    <header>
-      <nav>
-        <div className="navbar bg-base-100">
-          <div className="flex-1">
-            <a className="btn btn-ghost normal-case text-xl">CRC</a>
-          </div>
-          <div className="mr-8">
-            <ul className="flex space-x-6">
-              <Link href="/">Home</Link>
-              <Link href="/">About</Link>
-              <Link href="/">Services</Link>
-              <Link href="/">Contact</Link>
-            </ul>
-          </div>
-          <div className="flex-none gap-2">
-            <div className="dropdown dropdown-end">
-              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                <div>
-                  <FaUser className="w-ful text-[40px]" />
-                  {user && (
-                    <ul
-                      tabIndex={0}
-                      className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
-                    >
-                      <li>
-                        <a className="justify-between">
-                          Profile
-                          <span className="badge">New</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a>Settings</a>
-                      </li>
-                      <li>
-                        <a>Logout</a>
-                      </li>
-                    </ul>
-                  )}
-                </div>
-              </label>
-            </div>
-          </div>
+    <header className="py-8 ">
+      <nav className="flex justify-between items-center mx-4 font-montserrat">
+        <div className="">
+          <Link className="text-3xl font-bold" href="/">
+            {/* <Image src={logo} width={50} height={50} alt=" logo" /> */}
+            logo
+          </Link>
+        </div>
+
+        <ul
+          className={`absolute lg:static duration-500 z-10  lg:bg-none   ${
+            open
+              ? "top-0 bg-[#101630]  bg-opacity-90 my-6 gap-6 p-6 w-full "
+              : "-top-48 "
+          } flex flex-col lg:flex-row nav-item uppercase`}
+        >
+          {navLinks.map((link) => (
+            <Link
+              className=" hover:font-bold mr-6   hover:text-[#0084FF]"
+              href={link.href}
+              key={link.key}
+            >
+              {link.key}
+            </Link>
+          ))}
+        </ul>
+
+        <div>
+          <button>Explore More</button>
+        </div>
+        <div
+          className="lg:hidden block z-20 lg:z-0 "
+          onClick={() => setOpen(!open)}
+        >
+          <span className="cursor-pointer duration-500">
+            {open ? (
+              <RxCross1 className="text-white text-4xl "></RxCross1>
+            ) : (
+              <GiHamburgerMenu className="text-white text-4xl "></GiHamburgerMenu>
+            )}
+          </span>
         </div>
       </nav>
     </header>

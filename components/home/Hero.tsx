@@ -4,22 +4,22 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <Image
-            src={scooter}
-            className="max-w-sm rounded-lg shadow-2xl"
-            alt=""
-          />
-          <div>
-            <h1 className="text-5xl font-bold">
-              Welcome to Scooter Rental Service
-            </h1>
-            <p className="py-6">
-              Discover the Freedom of Renting Scooters: Unlock Your Urban
-              Adventure
-            </p>
+      <div className="flex justify-between items-center flex-col lg:flex-row-reverse">
+        <Image src={scooter} className="rounded-lg w-2/3" alt="" />
+        <div className=" w-1/3">
+          <h1 className="text-5xl font-bold">
+            Make Your Ride
+            <br />
+            Easy And Affordable
+          </h1>
+          <p className="py-10">
+            Discover the Freedom of Unlock Your Urban Adventure Discover the
+            Freedom of Renting.Unlock Your Urban Adventure Discover the Freedom
+            of Renting.
+          </p>
+          <div className="flex space-x-4">
             <button className="btn btn-primary">Get Started</button>
+            <button className="btn btn-outline">Explore More</button>
           </div>
         </div>
       </div>
