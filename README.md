@@ -1,2 +1,3 @@
 ##teach
 => daisyUi
+=> react icons

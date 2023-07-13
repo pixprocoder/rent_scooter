@@ -1,7 +1,9 @@
+import Hero from "@/components/home/Hero";
+
 export default function Home() {
   return (
     <section>
-      <p>Hero</p>
+      <Hero />
       <p>Services</p>
       <p>Features</p>
       <p>Testimonials</p>
