@@ -7,29 +7,26 @@ export const navLinks = [
 
 export const services = [];
 
-export const projects = [
+export const testimonials = [
   {
     id: 1,
-    title: "Project 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    image: "https://i.ibb.co/c62w716/analog-watch-g91b90204f-640.jpg",
-    gitHubLink: "https://github.com/pixprocoder",
-    liveLink: "https://github.com/pixprocoder",
+    name: "John Doe",
+    testimonial:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor euismod tortor, vitae tristique nisl aliquam vitae.",
+    avatar: "https://avatars.githubusercontent.com/u/89704576?v=4",
   },
   {
     id: 2,
-    title: "Project 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    image: "https://i.ibb.co/c62w716/analog-watch-g91b90204f-640.jpg",
-    gitHubLink: "https://github.com/pixprocoder",
-    liveLink: "https://github.com/pixprocoder",
+    name: "Jane Smith",
+    testimonial:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vitae felis risus.",
+    avatar: "https://avatars.githubusercontent.com/u/89704576?v=4",
   },
   {
-    id: 1,
-    title: "Project 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    image: "https://i.ibb.co/c62w716/analog-watch-g91b90204f-640.jpg",
-    gitHubLink: "https://github.com/pixprocoder",
-    liveLink: "https://github.com/pixprocoder",
+    id: 3,
+    name: "Mike Johnson",
+    testimonial:
+      "Fusce elementum, metus id fringilla bibendum, velit metus feugiat metus, sed molestie tellus nisl in odio.",
+    avatar: "https://avatars.githubusercontent.com/u/89704576?v=4",
   },
 ];
