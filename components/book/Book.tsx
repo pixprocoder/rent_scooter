@@ -3,57 +3,57 @@ import Button from "../shared/Button";
 
 const Book = () => {
   return (
-    <section className="-mt-20 mb-6">
-      <div className="card bg-white shadow-lg">
-        <div className="py-14  px-6 flex flex-col lg:flex-row justify-between items-center">
+    <section className="m-0 lg:-mt-20 mb-6">
+      <div className="rounded-lg bg-white shadow-lg">
+        <div className="py-14  px-6 flex flex-col lg:flex-row justify-between items-center gap-6">
           {/* Location */}
-          <div className="">
+          <div className="w-full">
             <h2 className="text-xl font-semibold my-2">Pickup Location</h2>
-            <div>
+            <div className="flex flex-col lg:flex-row gap-1 lg:gap-4">
               <input
                 type="text"
                 placeholder="Your Location"
-                className="input  input-sm  w-full max-w-xs mt-2"
+                className=" p-4 rounded-md border-blue-500 border outline-none mt-2"
               />
             </div>
           </div>
           {/* Pickup date */}
-          <div>
+          <div className="w-full">
             <h2 className="text-xl font-semibold my-2">Pickup Date</h2>
             <div>
               <div className="flex flex-col lg:flex-row gap-1 lg:gap-4">
                 <input
                   type="text"
                   placeholder="Date "
-                  className="input  input-sm  w-full max-w-xs mt-2"
+                  className="p-4 rounded-md border-blue-500 border outline-none mt-2"
                 />
                 <input
                   type="text"
                   placeholder="Time "
-                  className="input  input-sm  w-full max-w-xs mt-2"
+                  className="p-4 rounded-md border-blue-500 border outline-none mt-2"
                 />
               </div>
             </div>
           </div>
           {/* Return date */}
-          <div>
+          <div className="w-full">
             <h2 className="text-xl font-semibold my-2">Return Date</h2>{" "}
             <div>
               <div className="flex flex-col lg:flex-row gap-1 lg:gap-4">
                 <input
                   type="text"
                   placeholder="Date "
-                  className="input  input-sm  w-full max-w-xs mt-2"
+                  className="p-4 rounded-md border-blue-500 border outline-none mt-2"
                 />
                 <input
                   type="text"
                   placeholder="Time "
-                  className="input  input-sm  w-full max-w-xs mt-2"
+                  className="p-4 rounded-md border-blue-500 border outline-none mt-2"
                 />
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="w-full flex bottom-0">
             <Button title="Search"></Button>
           </div>
         </div>
