@@ -5,3 +5,22 @@
 .header-primary {
   font-size: 30px;
 }
+
+.banner2 {
+  background-image: url("../public/images/banner2.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
+  margin-left: calc(-50vw + 50%);
+}
+.banner1 {
+  background-image: url("../public/images/car.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
+  margin-left: calc(-50vw + 50%);
+}
