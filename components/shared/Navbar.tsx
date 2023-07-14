@@ -10,7 +10,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <header className="py-8 banner2 ">
-      <nav className="container mx-auto flex justify-between items-center ">
+      <nav className="container mx-auto flex justify-between items-center px-4 ">
         <div className="">
           <Link className="text-3xl font-bold" href="/">
             {/* <Image src={logo} width={50} height={50} alt=" logo" /> */}

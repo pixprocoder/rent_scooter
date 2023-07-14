@@ -1,7 +1,7 @@
 import About from "@/components/about/About";
 import Book from "@/components/book/Book";
 import Contact from "@/components/contact/Contact";
-import Features from "@/components/features/Features";
+import WhyChooseUs from "@/components/whyChooseUs/WhyChooseUs";
 
 import Hero from "@/components/home/Hero";
 import HowItWorks from "@/components/howItWorks/HowItWorks";
@@ -17,8 +17,8 @@ export default function Home() {
       <HowItWorks />
       <PopularCar />
       <Services />
+      <WhyChooseUs />
       <About />
-      <Features />
       <Testimonials />
       <Contact />
     </section>

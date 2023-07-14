@@ -56,7 +56,7 @@ const SingleCard = ({
 
           <hr className="my-2" />
         </div>
-        <div className="grid gap-4  grid-cols-3 my-4">
+        <div className="grid gap-2  grid-cols-3 my-4">
           <div className="flex gap-2 items-center">
             <MdOutlineSpeed></MdOutlineSpeed>
             {power}
