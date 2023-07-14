@@ -5,10 +5,10 @@ const Book = () => {
   return (
     <section className="-mt-20 mb-6">
       <div className="card bg-white shadow-lg">
-        <div className="py-14 px-6 flex justify-between items-center">
+        <div className="py-14  px-6 flex flex-col lg:flex-row justify-between items-center">
           {/* Location */}
-          <div>
-            <h2 className="card-title">Pickup Location</h2>
+          <div className="">
+            <h2 className="text-xl font-semibold my-2">Pickup Location</h2>
             <div>
               <input
                 type="text"
@@ -19,9 +19,9 @@ const Book = () => {
           </div>
           {/* Pickup date */}
           <div>
-            <h2 className="card-title">Pickup Date</h2>
+            <h2 className="text-xl font-semibold my-2">Pickup Date</h2>
             <div>
-              <div className="flex gap-4">
+              <div className="flex flex-col lg:flex-row gap-1 lg:gap-4">
                 <input
                   type="text"
                   placeholder="Date "
@@ -37,9 +37,9 @@ const Book = () => {
           </div>
           {/* Return date */}
           <div>
-            <h2 className="card-title">Return Date</h2>{" "}
+            <h2 className="text-xl font-semibold my-2">Return Date</h2>{" "}
             <div>
-              <div className="flex gap-4">
+              <div className="flex flex-col lg:flex-row gap-1 lg:gap-4">
                 <input
                   type="text"
                   placeholder="Date "
