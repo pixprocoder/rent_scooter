@@ -1,5 +1,6 @@
 import scooter from "../../public/images/scooter/2.png";
 import Image from "next/image";
+import Button from "../shared/Button";
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
             of Renting.
           </p>
           <div className="flex space-x-4">
-            <button className="btn btn-primary">Get Started</button>
+            <Button title="Get Started"></Button>
             <button className="btn btn-outline">Explore More</button>
           </div>
         </div>

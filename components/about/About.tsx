@@ -1,4 +1,5 @@
-import React from "react";
+import Image from "next/image";
+import img from "../../public/images/scooter/4.png";
 
 const About = () => {
   return (
@@ -6,7 +7,7 @@ const About = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <img src="/about-image.png" alt="About" className="w-full" />
+            <Image src={img} alt="About" className="w-full" />
           </div>
           <div>
             <h2 className="text-3xl font-semibold mb-4">
