@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import Image from "next/image";
 import img from "../../public/images/scooter/4.png";
+=======
+import React from "react";
+>>>>>>> 7bea8c2b4390905805c4ea57348539d4f093d501
 
 const About = () => {
   return (
@@ -7,7 +11,11 @@ const About = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
+<<<<<<< HEAD
             <Image src={img} alt="About" className="w-full" />
+=======
+            <img src="/about-image.png" alt="About" className="w-full" />
+>>>>>>> 7bea8c2b4390905805c4ea57348539d4f093d501
           </div>
           <div>
             <h2 className="text-3xl font-semibold mb-4">
