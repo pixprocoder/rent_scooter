@@ -93,7 +93,7 @@ const SingleCard = ({
               <p className="text-red-600 text-xl">{price}</p>
             </div>
           </div>
-          <button className=" bg-black text-white w-full p-3 font-semibold rounded-md text-xl">
+          <button className=" bg-gradient-to-r from-[#64CCC5]  to-[#176B87] text-white w-full p-3 font-semibold rounded-md text-xl">
             Rent Now
           </button>
         </div>

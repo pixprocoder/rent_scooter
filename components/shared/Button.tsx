@@ -35,7 +35,9 @@ const Button = ({
       onClick={handleClick}
       className={`  gap-3 px-4 py-3 font-montserrat font-bold 
       ${textColor || "text-white"}
-      ${bgColor || "bg-[#0084FF]"} rounded-xl  max-md:w-full
+      ${
+        bgColor || "bg-gradient-to-r from-[#64CCC5]  to-[#176B87]"
+      } rounded-xl  max-md:w-full
       `}
     >
       {leftIcon && <Image src={leftIcon} width={14} height={14} alt="left" />}

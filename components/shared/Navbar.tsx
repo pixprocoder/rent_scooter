@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import logo from "../../public/images/logoWhite.svg";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
@@ -13,8 +14,7 @@ const Navbar = () => {
       <nav className="container mx-auto flex justify-between items-center px-4 ">
         <div className="">
           <Link className="text-3xl font-bold" href="/">
-            {/* <Image src={logo} width={50} height={50} alt=" logo" /> */}
-            logo
+            <Image src={logo} width={80} height={80} alt=" logo" />
           </Link>
         </div>
 

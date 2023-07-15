@@ -5,6 +5,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
+.text-tertiary {
+  color: #64ccc5;
+}
+.text-highlight {
+  color: #176b87;
+}
+.text-secondary {
+  color: #001c30;
+}
+.text-primary {
+  color: #dafffb;
+}
+
+.bg-tertiary {
+  color: #64ccc5;
+}
+.bg-highlight {
+  color: #176b87;
+}
+.bg-secondary {
+  color: #001c30;
+}
+.bg-primary {
+  color: #dafffb;
+}
+
 .header-primary {
   font-size: 30px;
 
@@ -19,7 +45,7 @@
 }
 
 .banner2 {
-  background-image: url("../public/images/banner2.svg");
+  background-image: url("../public/images/g.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

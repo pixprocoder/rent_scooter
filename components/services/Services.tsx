@@ -1,16 +1,22 @@
 const Services = () => {
   return (
-    <section className=" py-10">
+    <section className=" py-10 px-4 lg:p-0">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold text-center mb-8">
-          Our Services
-        </h2>
+        <div>
+          <h2 className="font-header text-3xl font-bold text-center mb-2">
+            Our Services
+          </h2>
+          <p className="font-body">
+            Choose from hourly, daily, or weekly rental plans
+          </p>
+          <hr className="my-4" />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className=" rounded-lg p-6 shadow-md">
             <h3 className="text-xl font-semibold mb-4">
               Flexible Rental Options
             </h3>
-            <p>
+            <p className="font-body">
               Choose from hourly, daily, or weekly rental plans to fit your
               needs. We offer flexible options for any duration.
             </p>
