@@ -36,6 +36,10 @@
 
   font-family: "Black Ops One", cursive;
 }
+
+body {
+  background-color: #dafffb;
+}
 .font-header {
   font-family: "Jura", sans-serif;
   font-weight: 800;
@@ -54,7 +58,13 @@
   margin-left: calc(-50vw + 50%);
 }
 .banner1 {
-  background-image: url("../public/images/car.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../public/images/about.jpg");
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

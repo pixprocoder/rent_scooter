@@ -13,7 +13,7 @@ const Book = () => {
               <input
                 type="text"
                 placeholder="Your Location"
-                className=" p-4 rounded-md border-blue-500 border outline-none mt-2"
+                className=" p-4 rounded-md border-[#64CCC5] border outline-none mt-2"
               />
             </div>
           </div>
@@ -25,12 +25,12 @@ const Book = () => {
                 <input
                   type="text"
                   placeholder="Date "
-                  className="p-4 rounded-md border-blue-500 border outline-none mt-2"
+                  className="p-4 rounded-md border-[#64CCC5] border outline-none mt-2"
                 />
                 <input
                   type="text"
                   placeholder="Time "
-                  className="p-4 rounded-md border-blue-500 border outline-none mt-2"
+                  className="p-4 rounded-md border-[#64CCC5] border outline-none mt-2"
                 />
               </div>
             </div>
@@ -43,12 +43,12 @@ const Book = () => {
                 <input
                   type="text"
                   placeholder="Date "
-                  className="p-4 rounded-md border-blue-500 border outline-none mt-2"
+                  className="p-4 rounded-md border-[#64CCC5] border outline-none mt-2"
                 />
                 <input
                   type="text"
                   placeholder="Time "
-                  className="p-4 rounded-md border-blue-500 border outline-none mt-2"
+                  className="p-4 rounded-md border-[#64CCC5] border outline-none mt-2"
                 />
               </div>
             </div>

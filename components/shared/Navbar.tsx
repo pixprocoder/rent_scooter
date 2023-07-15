@@ -27,7 +27,7 @@ const Navbar = () => {
         >
           {navLinks.map((link) => (
             <Link
-              className="  mr-6 text-white  "
+              className="  mr-6 text-white hover:text-[#64CCC5] "
               href={link.href}
               key={link.key}
             >

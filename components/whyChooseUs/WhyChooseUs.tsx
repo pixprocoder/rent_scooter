@@ -2,10 +2,10 @@ import { AiFillSetting } from "react-icons/ai";
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-10 px-4 lg:p-0">
+    <section className="my-20 py-10 px-4 lg:p-0">
       <div className="container mx-auto">
         <h2 className="font-header text-3xl font-semibold text-center mb-2">
-          Why Choose Us
+          Why <span className="text-[#64CCC5]">Choose Us</span>
         </h2>
         <p className="font-body  text-center mb-8">
           Unbelievable support you can't imagine. so you should try our service.

@@ -7,7 +7,7 @@ const HowItWorks = () => {
       <div className="py-10">
         <div className="container mx-auto">
           <div>
-            <h2 className="text-3xl lg:text-5xl font-bold text-center text-black mb-4">
+            <h2 className="text-3xl lg:text-5xl font-bold text-center text-[#64CCC5] mb-4">
               How It Works
             </h2>
             <h2 className=" font-light text-center text-black mb-8">
@@ -24,7 +24,7 @@ const HowItWorks = () => {
                   key={step.id}
                   className="card bg-gray-200 shadow-md p-6 mx-2 flex items-center"
                 >
-                  <div className="rounded-full border p-6 ">
+                  <div className="rounded-full  p-6 ">
                     <Image
                       src={step.icon}
                       alt={step.title}
