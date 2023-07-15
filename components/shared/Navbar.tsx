@@ -21,8 +21,8 @@ const Navbar = () => {
         <ul
           className={`absolute lg:static duration-500 z-10  lg:bg-none   ${
             open
-              ? " top-0 bg-[#101630]  bg-opacity-90 my-6 gap-6 p-6 w-full "
-              : "-top-48 "
+              ? " top-0 bg-black  bg-opacity-90  gap-6 m-0 p-10 w-full "
+              : "-right-60 "
           } flex flex-col font-bold lg:flex-row nav-item uppercase`}
         >
           {navLinks.map((link) => (
@@ -42,9 +42,9 @@ const Navbar = () => {
         >
           <span className="cursor-pointer duration-500">
             {open ? (
-              <RxCross1 className="text-black text-4xl "></RxCross1>
+              <RxCross1 className="text-[#64CCC5] text-4xl "></RxCross1>
             ) : (
-              <GiHamburgerMenu className="text-black text-4xl "></GiHamburgerMenu>
+              <GiHamburgerMenu className="text-[#64CCC5] text-4xl "></GiHamburgerMenu>
             )}
           </span>
         </div>
