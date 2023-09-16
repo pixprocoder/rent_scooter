@@ -38,7 +38,7 @@ const SingleCard = ({
             alt="Image"
             // layout="fill"
             // objectFit="cover"
-            className="transform  transition-transform duration-500 hover:scale-105"
+            className="transform  transition-transform duration-500 hover:scale-150"
           />
         </div>
       </div>
