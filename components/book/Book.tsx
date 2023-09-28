@@ -22,30 +22,28 @@ const Book = () => {
           {/* Location */}
           <div className="w-full">
             <h2 className="text-xl font-semibold my-2">Pickup Location</h2>
-            <div className="flex flex-col lg:flex-row gap-1 lg:gap-4">
-              <Popover>
-                <PopoverTrigger asChild>
-                  <Button
-                    variant={"outline"}
-                    className={cn(
-                      "w-[280px] justify-start text-left font-normal",
-                      !date && "text-muted-foreground"
-                    )}
-                  >
-                    <CalendarIcon className="mr-2 h-4 w-4" />
-                    {date ? format(date, "PPP") : <span>Pick a date</span>}
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent className="w-auto p-0">
-                  <Calendar
-                    mode="single"
-                    selected={date}
-                    onSelect={setDate}
-                    initialFocus
-                  />
-                </PopoverContent>
-              </Popover>
-            </div>
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button
+                  variant={"outline"}
+                  className={cn(
+                    "w-full justify-start text-left font-normal",
+                    !date && "text-muted-foreground"
+                  )}
+                >
+                  <CalendarIcon className="mr-2 h-4 w-4" />
+                  {date ? format(date, "PPP") : <span>Pick a date</span>}
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent className="w-auto p-0">
+                <Calendar
+                  mode="single"
+                  selected={date}
+                  onSelect={setDate}
+                  initialFocus
+                />
+              </PopoverContent>
+            </Popover>
           </div>
           {/* Pickup date */}
           <div className="w-full">
@@ -57,7 +55,7 @@ const Book = () => {
                     <Button
                       variant={"outline"}
                       className={cn(
-                        "w-[280px] justify-start text-left font-normal",
+                        "w-full justify-start text-left font-normal",
                         !date && "text-muted-foreground"
                       )}
                     >
@@ -87,7 +85,7 @@ const Book = () => {
                     <Button
                       variant={"outline"}
                       className={cn(
-                        "w-[280px] justify-start text-left font-normal",
+                        "w-full justify-start text-left font-normal",
                         !date && "text-muted-foreground"
                       )}
                     >
