@@ -2,9 +2,9 @@ import icon from "../public/images/Icons/expertise.png";
 
 export const navLinks = [
   { href: "/", key: "Home" },
-  { href: "/", key: "Services" },
   { href: "/", key: "About" },
-  { href: "/", key: "Contact Us" },
+  { href: "/", key: "Services" },
+  { href: "/", key: "Contact" },
 ];
 
 export const services = [];
