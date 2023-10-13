@@ -9,7 +9,7 @@ const Book = () => {
   return (
     <section className="">
       <div className="rounded-lg bg-gray-900 bg-opacity-40 shadow-lg p-6 flex flex-col">
-        <div className="grid grid-cols-4 place-items-end gap-6">
+        <div className="grid grid-col-1  lg:grid-cols-4 place-items-end gap-6">
           {/* Location */}
           <div className="">
             <h2 className="text-xl text-white font-bold my-2">
