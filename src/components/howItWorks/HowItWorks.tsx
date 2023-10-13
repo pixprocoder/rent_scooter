@@ -7,10 +7,10 @@ const HowItWorks = () => {
       <div className="py-10">
         <div className="container mx-auto">
           <div>
-            <h2 className="text-3xl lg:text-5xl font-bold text-center text-[#64CCC5] mb-4">
+            <h2 className="text-3xl lg:text-5xl font-bold text-center text-green-700 mb-4">
               How It Works
             </h2>
-            <h2 className=" font-light text-center text-black mb-8">
+            <h2 className="text-white font-light text-center  mb-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Similique, nemo enim numquam <br /> distinctio eum earum mollitia
               ratione pariatur quibusdam, aperiam qui
@@ -22,9 +22,9 @@ const HowItWorks = () => {
               <>
                 <div
                   key={step.id}
-                  className="card bg-gray-200 shadow-md p-6 mx-2 flex items-center"
+                  className="card shadow-md p-6 gap-4 flex items-center flex-col "
                 >
-                  <div className="rounded-full  p-6 ">
+                  <div className="rounded-full  p-6 bg-slate-500 ">
                     <Image
                       src={step.icon}
                       alt={step.title}
@@ -32,7 +32,7 @@ const HowItWorks = () => {
                       height={50}
                     />
                   </div>
-                  <div className="text-center">
+                  <div className="text-center text-white">
                     <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
                     <p>{step.description}</p>
                   </div>

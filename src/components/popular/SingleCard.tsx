@@ -1,6 +1,5 @@
 // import Image from "next/image";
 import { MdOutlineSpeed } from "react-icons/md";
-import { AiFillStar } from "react-icons/ai";
 import { MdOutlineLocationOn } from "react-icons/md";
 type Props = {
   id: number;
@@ -45,19 +44,11 @@ const SingleCard = ({
 
       <div className=" px-10 py-5 items-center text-center">
         <div className="mb-4">
-          <h2 className="card-title">{model}</h2>
-          <div className="flex gap-1">
-            <AiFillStar className=" text-xl mt-2 text-yellow-400"></AiFillStar>
-            <AiFillStar className=" text-xl mt-2 text-yellow-400"></AiFillStar>
-            <AiFillStar className=" text-xl mt-2 text-yellow-400"></AiFillStar>
-            <AiFillStar className=" text-xl mt-2 text-yellow-400"></AiFillStar>
-            <AiFillStar className=" text-xl mt-2 text-yellow-400"></AiFillStar>
-          </div>
-
-          <hr className="my-2" />
+          <h2 className="card-title text-xl text-gray-100">{model}</h2>
+          <hr className="my-2 text-gray-300" />
         </div>
-        <div className="grid gap-2  grid-cols-3 my-4">
-          <div className="flex gap-2 items-center">
+        <div className="grid gap-2  grid-cols-3 my-4 text-gray-300">
+          <div className="flex gap-2 items-center ">
             <MdOutlineSpeed></MdOutlineSpeed>
             {power}
           </div>
@@ -84,16 +75,16 @@ const SingleCard = ({
           </div>
         </div>
         <div className="w-full ">
-          <div className="flex justify-between items-center  bg-gray-50 w-full p-3 font-semibold rounded-sm mb-2">
+          <div className="flex justify-between items-center bg-opacity-10  bg-gray-900 w-full p-3 font-semibold rounded-sm mb-2">
             <p className="flex gap-2 items-center ">
-              <MdOutlineLocationOn />
-              <span className="text-sm text-opacity-50">{location}</span>
+              <MdOutlineLocationOn className="text-white" />
+              <span className="text-sm  text-gray-300">{location}</span>
             </p>
             <div className="">
-              <p className="text-red-600 text-xl">{price}</p>
+              <p className="text-green-600 text-xl">{price}</p>
             </div>
           </div>
-          <button className=" bg-gradient-to-r from-[#64CCC5]  to-[#176B87] text-white w-full p-3 font-semibold rounded-md text-xl">
+          <button className="border border-green-700 text-green-700 hover:bg-green-700 hover:text-white transition-all duration-300 w-full p-3 font-bold rounded-md text-xl">
             Rent Now
           </button>
         </div>
