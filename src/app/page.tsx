@@ -18,7 +18,6 @@ export default function Home() {
       <Services />
       <WhyChooseUs />
       <About />
-      <Testimonials />
       <Contact />
     </section>
   );
