@@ -11,7 +11,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <header className=" py-6  ">
-      <nav className="container mx-auto flex justify-between items-center ">
+      <nav className="container mx-auto p-2 flex justify-between items-center ">
         <div className="">
           <Link className="text-3xl font-bold" href="/">
             <Image src={logo} width={80} height={80} alt=" logo" />
