@@ -23,19 +23,19 @@ const Services = () => {
             </p>
           </div>
           <div className=" rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold mb-4">
+            <h3 className="text-xl font-semibold mb-4 text-gray-100">
               Wide Scooter Selection
             </h3>
-            <p>
+            <p className="text-gray-300">
               Explore our wide range of scooters, from economical options to
               premium models. Find the perfect scooter for your ride.
             </p>
           </div>
           <div className=" rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold mb-4">
+            <h3 className="text-xl font-semibold mb-4 text-gray-100">
               Convenient Pickup and Return
             </h3>
-            <p>
+            <p className="text-gray-300">
               Enjoy hassle-free pickup and return processes. Our locations are
               strategically placed for your convenience.
             </p>
