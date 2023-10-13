@@ -15,19 +15,75 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold  mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li>Home</li>
-              <li>Book</li>
-              <li>About</li>
-              <li>Contact Us</li>
+              <li>
+                <Link
+                  className="hover:text-green-600 transition-all duration-200"
+                  href="/"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:text-green-600 transition-all duration-200"
+                  href="/"
+                >
+                  Book
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:text-green-600 transition-all duration-200"
+                  href="/"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:text-green-600 transition-all duration-200"
+                  href="/"
+                >
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl font-bold  mb-4">Features</h3>
             <ul className="space-y-2 text-sm">
-              <li>Early Access</li>
-              <li>Online Payment</li>
-              <li>Security</li>
-              <li>Support</li>
+              <li>
+                <Link
+                  className="hover:text-green-600 transition-all duration-200"
+                  href="/"
+                >
+                  Early Access
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:text-green-600 transition-all duration-200"
+                  href="/"
+                >
+                  Online payment
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:text-green-600 transition-all duration-200"
+                  href="/"
+                >
+                  Security
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:text-green-600 transition-all duration-200"
+                  href="/"
+                >
+                  Support
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -72,7 +128,8 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-center text-white mt-14 text-xs ">
-          Copyright ©2023 All rights reserved | cris rent srl
+          Copyright ©2023 All rights reserved |{" "}
+          <b className="text-green-500">CRIS-RENT-SRL 💚</b>
         </p>
       </div>
     </footer>
