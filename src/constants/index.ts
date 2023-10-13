@@ -4,7 +4,7 @@ export const navLinks = [
   { href: "/", key: "Home" },
   { href: "/", key: "About" },
   { href: "/", key: "Services" },
-  { href: "/", key: "Contact" },
+  { href: "/", key: "Contact Us" },
 ];
 
 export const services = [];

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   return (
-    <section className=" bg-[#fbfbfb] ">
+    <section className="  ">
       <div className="py-10">
         <div className="container mx-auto">
           <div>

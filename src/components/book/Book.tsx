@@ -27,7 +27,7 @@ const Book = () => {
             <h2 className="text-xl text-white font-bold my-2">Return Date</h2>
             <Picker />
           </div>
-          <Button className="w-full">Book</Button>
+          <Button className="w-full ">Book Now</Button>
         </div>
       </div>
     </section>

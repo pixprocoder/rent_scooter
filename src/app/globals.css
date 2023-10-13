@@ -67,6 +67,16 @@ body {
   height: 100%;
   margin-left: calc(-50vw + 50%);
 }
+
+/* TODO: apply this for mobile device later */
+@media only screen and (max-width: 600px) {
+  .banner2 {
+    width: auto;
+    height: 50%;
+    margin-left: calc(-50vw + 50%);
+  }
+}
+
 /* .banner1 {
   background-image: linear-gradient(
       to right,

@@ -13,7 +13,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <header className=" py-3  ">
-      <nav className="container mx-auto p-2 flex justify-between items-center ">
+      <nav className="container mx-auto p-2 flex justify-between items-center   ">
         <div className="">
           <Link className="text-3xl font-bold" href="/">
             <p className="text-2xl font-bold text-green-800">CRIS RENT</p>
