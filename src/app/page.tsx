@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <section className="container mx-auto p-2 ">
       <Hero />
-      <Book />
+      {/* <Book /> */}
       <HowItWorks />
       <PopularCar />
       <Services />

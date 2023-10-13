@@ -5,12 +5,15 @@ import banner from "../../assets/images/hero-banner/Hero-banner.jpg";
 import banner2 from "../../assets/images/hero-banner/Hero-banner-2.jpg";
 import banner3 from "../../assets/images/hero-banner/Hero-banner-3.jpg";
 import Image from "next/image";
+import Book from "../book/Book";
 
 const Hero = () => {
   return (
-    <section>
-      <div className="bg-black">
-        <Image className="w-full" src={banner} alt="banner" />
+    <section className="banner2">
+      <div className=" flex justify-center items-center h-[800px]">
+        <div className="container">
+          <Book />
+        </div>
       </div>
     </section>
   );
