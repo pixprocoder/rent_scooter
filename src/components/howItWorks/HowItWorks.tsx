@@ -24,12 +24,12 @@ const HowItWorks = () => {
                   key={step.id}
                   className="card shadow-md p-6 gap-4 flex items-center flex-col "
                 >
-                  <div className="rounded-full  p-6 bg-slate-500 ">
+                  <div className="rounded-full  p-6 border border-green-700 ">
                     <Image
                       src={step.icon}
                       alt={step.title}
-                      width={50}
-                      height={50}
+                      width={60}
+                      height={60}
                     />
                   </div>
                   <div className="text-center text-white">

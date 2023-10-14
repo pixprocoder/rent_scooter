@@ -1,4 +1,8 @@
 import icon from "../assets/images/Icons/expertise.png";
+import booking from "../assets/images/Icons/booking.png";
+import choose from "../assets/images/Icons/choose.png";
+import enjoy from "../assets/images/Icons/enjoy.png";
+import pickup from "../assets/images/Icons/pickup.png";
 
 export const navLinks = [
   { href: "/", key: "Home" },
@@ -58,7 +62,7 @@ export const steps = [
     title: "Choose a Scooter",
     description:
       "Browse our selection of scooters and choose the one that suits your preferences and requirements.",
-    icon: icon,
+    icon: choose,
   },
   {
     id: 2,
@@ -66,7 +70,7 @@ export const steps = [
     title: "Make a Reservation",
     description:
       "Reserve the selected scooter by specifying the desired rental duration and providing your contact details.",
-    icon: icon,
+    icon: booking,
     bgColor: "bg-red-800",
   },
   {
@@ -75,7 +79,7 @@ export const steps = [
     title: "Pick Up the Scooter",
     description:
       "Visit our rental location at the designated time to collect your reserved scooter. Bring your ID and any required documents.",
-    icon: icon,
+    icon: pickup,
   },
   {
     id: 4,
@@ -83,7 +87,7 @@ export const steps = [
     title: "Enjoy Your Ride",
     description:
       "Take the scooter for a ride and explore your desired destinations. Have a memorable experience on our reliable scooters.",
-    icon: icon,
+    icon: enjoy,
   },
 ];
 
