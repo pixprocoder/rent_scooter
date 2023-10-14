@@ -9,25 +9,25 @@ const Book = () => {
   return (
     <section className="">
       <div className="rounded-lg bg-gray-900 bg-opacity-40 shadow-lg p-6 flex flex-col">
-        <div className="grid grid-col-1  lg:grid-cols-4 place-items-end gap-6">
+        <div className="grid grid-col-1  lg:grid-cols-4 lg:place-items-end place-items-center gap-6">
           {/* Location */}
-          <div className="">
+          <div className="w-full">
             <h2 className="text-xl text-white font-bold my-2">
               Pickup Location
             </h2>
             <Picker />
           </div>
           {/* Pickup date */}
-          <div className="">
+          <div className="w-full">
             <h2 className="text-xl text-white font-bold my-2">Pick A Date</h2>
             <Picker />
           </div>
           {/* Return date */}
-          <div className="">
+          <div className="w-full">
             <h2 className="text-xl text-white font-bold my-2">Return Date</h2>
             <Picker />
           </div>
-          <Button className="w-full ">Book Now</Button>
+          <Button className="lg:w-full ">Book Now</Button>
         </div>
       </div>
     </section>
