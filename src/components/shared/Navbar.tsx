@@ -9,7 +9,7 @@ import { Button } from "../ui/button";
 
 const Navbar = () => {
   return (
-    <header className="  mb-6 mx-auto bg-black bg-opacity-20 z-10 ">
+    <header className=" mx-auto bg-black bg-opacity-20 z-10 ">
       <nav className="container p-6 flex justify-between items-center   ">
         <div className="">
           <Link className="text-3xl font-bold" href="/">

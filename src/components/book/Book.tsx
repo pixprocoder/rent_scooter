@@ -15,17 +15,17 @@ const Book = () => {
             <h2 className="text-xl text-white font-bold my-2">
               Pickup Location
             </h2>
-            <Picker />
+            <Picker option={"Location"} />
           </div>
           {/* Pickup date */}
           <div className="w-full">
             <h2 className="text-xl text-white font-bold my-2">Pick A Date</h2>
-            <Picker />
+            <Picker option={"Date"} />
           </div>
           {/* Return date */}
           <div className="w-full">
             <h2 className="text-xl text-white font-bold my-2">Return Date</h2>
-            <Picker />
+            <Picker option={"Date"} />
           </div>
           <Button className="lg:w-full ">Book Now</Button>
         </div>

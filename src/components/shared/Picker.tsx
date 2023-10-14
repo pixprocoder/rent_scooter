@@ -9,7 +9,11 @@ import { Calendar } from "../ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { cn } from "@/src/lib/utils";
 
-export function Picker() {
+type option = {
+  option?: string;
+};
+
+export function Picker({ option }: option) {
   const [date, setDate] = React.useState<Date>();
 
   return (
@@ -23,7 +27,15 @@ export function Picker() {
           )}
         >
           <CalendarIcon className="mr-2 h-4 w-4" />
-          {date ? format(date, "PPP") : <span>Pick a date</span>}
+          {date ? (
+            format(date, "PPP")
+          ) : (
+            <span>
+              {option === "location"
+                ? `Pick your ${option}`
+                : `Pick A ${option}`}
+            </span>
+          )}
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0">
