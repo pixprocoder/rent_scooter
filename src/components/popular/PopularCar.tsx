@@ -9,7 +9,7 @@ const PopularCar = () => {
       <div>
         <div className="px-4 lg:px-0">
           <h2 className="text-3xl mt-10 lg:text-5xl font-header font-bold text-center text-white mb-4">
-            Explore <span className="text-green-700">Popular vehicles</span>
+            Explore <span className="text-[#1ECB15]">Popular vehicles</span>
           </h2>
           <h2 className=" font-light text-center font-body text-gray-300 mb-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,

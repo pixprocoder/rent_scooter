@@ -1,11 +1,11 @@
 const Services = () => {
   return (
-    <section className="my-20 py-10 px-4 lg:p-0">
+    <section id="service" className="my-20 py-10 px-4 lg:p-0">
       <div className="container mx-auto">
         <div className="my-10">
           <h2 className="font-header  text-4xl font-bold text-center mb-2">
             <span className="text-white">Our</span>{" "}
-            <span className="text-green-700">Services</span>
+            <span className="text-[#1ECB15]">Services</span>
           </h2>
           <p className="font-body text-center text-white">
             Choose from hourly, daily, or weekly rental plans

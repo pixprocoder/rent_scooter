@@ -77,7 +77,7 @@ const SwiperCarousel = () => {
                       <p className="text-green-600 text-xl">{"price"}</p>
                     </div>
                   </div>
-                  <button className="border border-green-700 text-green-700 hover:bg-green-700 hover:text-white transition-all duration-300 w-full p-3 font-bold rounded-md text-xl">
+                  <button className="border border-green-700 text-[#1ECB15] hover:bg-green-700 hover:text-white transition-all duration-300 w-full p-3 font-bold rounded-md text-xl">
                     Rent Now
                   </button>
                 </div>

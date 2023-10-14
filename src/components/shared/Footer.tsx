@@ -119,7 +119,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>Stay update with our latest</li>
               <li>
-                <div className="flex w-full max-w-sm items-center space-x-2 text-green-700">
+                <div className="flex w-full max-w-sm items-center space-x-2 text-[#1ECB15]">
                   <Input type="email" placeholder="Email" />
                   <Button type="submit">Subscribe</Button>
                 </div>

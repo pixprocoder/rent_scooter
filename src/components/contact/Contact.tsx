@@ -1,6 +1,11 @@
+import { Button } from "../ui/button";
+
 const Contact = () => {
   return (
-    <section className=" py-20 lg:py-[120px] overflow-hidden relative z-10">
+    <section
+      id="contact"
+      className=" py-20 lg:py-[120px] overflow-hidden relative z-10"
+    >
       <div className="container">
         <div className="flex flex-wrap lg:justify-between -mx-4">
           <div className="w-full lg:w-1/2 xl:w-6/12 px-4">
@@ -10,7 +15,7 @@ const Contact = () => {
               </span>
               <h2
                 className="
-                  text-green-700
+                  text-[#1ECB15]
                   mb-6
                   uppercase
                   font-bold
@@ -101,21 +106,22 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <div>
-                  <button
+                  <Button
                     type="submit"
                     className="
                         w-full
-                        text-white
                         bg-primary
                         rounded
-                        border border-primary
                         p-3
                         transition
-                        hover:bg-opacity-90
+                        bg-[#1ECB15] 
+                        hover:bg-transparent
+                         border 
+                         border-[#1ECB15]
                         "
                   >
                     Send Message
-                  </button>
+                  </Button>
                 </div>
               </form>
               <div>
