@@ -1,7 +1,8 @@
 import { carData } from "@/src/constants";
 import React from "react";
 import SwiperCore from "swiper";
-// import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { MdOutlineSpeed } from "react-icons/md";
+import { MdOutlineLocationOn } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -18,7 +19,7 @@ SwiperCore.use([Navigation, Pagination, Keyboard]);
 const SwiperCarousel = () => {
   return (
     <>
-      <Swiper watchSlidesProgress={true} slidesPerView={3} className="mySwiper">
+      <Swiper watchSlidesProgress={true} slidesPerView={1} className="mySwiper">
         {carData.map((car) => (
           <SwiperSlide>
             <div className=" flex flex-col justify-center items-center  shadow-lg">
@@ -40,36 +41,36 @@ const SwiperCarousel = () => {
                 </div>
                 <div className="grid gap-2  grid-cols-3 my-4 text-gray-300">
                   <div className="flex gap-2 items-center ">
-                    {/* <MdOutlineSpeed></MdOutlineSpeed> */}
-                    {"power"}
+                    <MdOutlineSpeed></MdOutlineSpeed>
+                    {car.power}
                   </div>
                   <div className="flex gap-2 items-center">
-                    {/* <MdOutlineSpeed></MdOutlineSpeed> */}
-                    {"transmission"}
+                    <MdOutlineSpeed></MdOutlineSpeed>
+                    {car.transmission}
                   </div>
                   <div className="flex gap-2 items-center">
-                    {/* <MdOutlineSpeed></MdOutlineSpeed> */}
-                    {"fuelType"}
+                    <MdOutlineSpeed></MdOutlineSpeed>
+                    {car.fuelType}
                   </div>
                   <div className="flex gap-2 items-center">
-                    {/* <MdOutlineSpeed></MdOutlineSpeed> */}
-                    {"year"}
+                    <MdOutlineSpeed></MdOutlineSpeed>
+                    {car.year}
                   </div>
                   <div className="flex gap-2 items-center">
-                    {/* <MdOutlineSpeed></MdOutlineSpeed> */}
-                    {"power"}
+                    <MdOutlineSpeed></MdOutlineSpeed>
+                    {car.power}
                   </div>
 
                   <div className="flex gap-2 items-center">
-                    {/* <MdOutlineSpeed></MdOutlineSpeed> */}
-                    {"capacity"}
+                    <MdOutlineSpeed></MdOutlineSpeed>
+                    {car.capacity}
                   </div>
                 </div>
                 <div className="w-full ">
                   <div className="flex justify-between items-center bg-opacity-10  bg-gray-900 w-full p-3 font-semibold rounded-sm mb-2">
                     <p className="flex gap-2 items-center ">
                       <span className="text-sm  text-gray-300">
-                        {"location"}
+                        {car.location}
                       </span>
                     </p>
                     <div className="">

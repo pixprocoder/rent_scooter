@@ -19,11 +19,11 @@ const PopularCar = () => {
           <hr className="my-6 w-2/4 mx-auto text-gray-300 " />
         </div>
 
-        <div>
+        <div className="block sm:hidden">
           <SwiperCarousel />
         </div>
 
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className=" hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {carData.map((car) => (
             <SingleCard
               key={car.id}
@@ -40,7 +40,7 @@ const PopularCar = () => {
               price={car.price}
             />
           ))}
-        </div> */}
+        </div>
       </div>
     </section>
   );
