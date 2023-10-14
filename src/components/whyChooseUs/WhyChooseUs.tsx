@@ -1,24 +1,32 @@
 import { whyChooseUs } from "@/src/constants";
+import Image from "next/image";
 import { AiFillSetting } from "react-icons/ai";
-
+import { FaKey, FaRoad, FaTrophy } from "react-icons/fa";
 const WhyChooseUs = () => {
   return (
-    <section className="my-20 py-10 px-4 lg:p-0">
-      <div className="container mx-auto">
-        <h2 className="font-header text-3xl font-semibold text-center text-white mb-2">
-          Why <span className="text-green-700">Choose Us</span>
+    <section className="choose-banner my-20 py-10 px-4 lg:p-0">
+      <div className="container mx-auto p-0 lg:py-20 flex-col lg:flex-row flex justify-center items-center">
+        <h2 className="font-header text-5xl  font-bold text-center text-white mb-2">
+          {" "}
+          Let's Your <span className="text-[#1ECB15]">Adventure</span> Begin
         </h2>
-        <p className="font-body  text-center text-gray-300 mb-8">
-          Unbelievable support you can't imagine. so you should try our service.
-        </p>
-        <hr className="my-6 text-gray-300 w-2/4 mx-auto" />
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {whyChooseUs.map((item) => (
             <div
               key={item.id}
-              className="card  shadow-md p-6 mx-2 flex items-center"
+              className="card  shadow-md p-6 mx-2 flex flex-col gap-4 justify-start  items-start"
             >
-              <div className="text-center">
+              <div className="rounded-md  p-4  bg-[#1ECB15] ">
+                {item.id === 1 ? (
+                  <FaTrophy className="text-white text-4xl" />
+                ) : item.id === 2 ? (
+                  <FaRoad className="text-white text-4xl" />
+                ) : (
+                  <FaKey className="text-white text-4xl" />
+                )}
+              </div>
+              <div className="">
                 <h3 className="text-xl font-semibold mb-2 text-gray-100">
                   {item.title}
                 </h3>

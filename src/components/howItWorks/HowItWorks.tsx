@@ -7,8 +7,8 @@ const HowItWorks = () => {
       <div className="py-10">
         <div className="container mx-auto">
           <div>
-            <h2 className="text-3xl lg:text-5xl font-bold text-center text-green-700 mb-4">
-              How It Works
+            <h2 className="text-3xl lg:text-5xl font-bold text-center text-white  mb-4">
+              How <span className="text-green-700">It Works</span>
             </h2>
             <h2 className="text-gray-300 font-light text-center  mb-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -22,9 +22,9 @@ const HowItWorks = () => {
               <>
                 <div
                   key={step.id}
-                  className="card shadow-md p-6 gap-4 flex items-center flex-col "
+                  className="card shadow-md hover:shadow-xl p-6 gap-4 flex items-center flex-col "
                 >
-                  <div className="rounded-full  p-6 border border-green-700 ">
+                  <div className="rounded-full  p-6 border border-[#1ECB15] ">
                     <Image
                       src={step.icon}
                       alt={step.title}

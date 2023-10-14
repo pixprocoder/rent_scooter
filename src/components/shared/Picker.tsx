@@ -31,9 +31,7 @@ export function Picker({ option }: option) {
             format(date, "PPP")
           ) : (
             <span>
-              {option === "location"
-                ? `Pick your ${option}`
-                : `Pick A ${option}`}
+              {option !== "Date" ? `Pick your ${option}` : `Pick A ${option}`}
             </span>
           )}
         </Button>

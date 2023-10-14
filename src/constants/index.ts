@@ -14,17 +14,17 @@ export const navLinks = [
 export const whyChooseUs = [
   {
     id: 1,
-    title: "Easy Booking Process",
+    title: "First Class Services",
     desc: "Our user-friendly platform allows you to book a scooter quickly and effortlessly. It only takes a few simple steps.",
   },
   {
     id: 2,
-    title: " 24/7 Customer Support",
+    title: " 24/7 road assistance",
     desc: "We are here to help you 24/7 hour a day. so don't be wried come to us every time you feel like.",
   },
   {
     id: 3,
-    title: "Quality Scooters",
+    title: "Free Pick-Up & Drop-Off",
     desc: "Our First priority is to give you best car/scooter. just keep an eye when you're taking from us.",
   },
 ];
