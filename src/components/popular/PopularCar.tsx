@@ -1,11 +1,7 @@
+"use client";
 import { carData } from "@/src/constants";
 import SingleCard from "./SingleCard";
-import { TabsComponent } from "../shared/TabsComponent";
-import scooter1 from "../../assets/images/scooter/1.png";
-import scooter2 from "../../assets/images/scooter/2.png";
-import scooter3 from "../../assets/images/scooter/3.png";
-import scooter4 from "../../assets/images/scooter/4.png";
-import scooter5 from "../../assets/images/scooter/car.png";
+import SwiperCarousel from "../shared/SwiperCarousel";
 
 const PopularCar = () => {
   return (
@@ -22,7 +18,12 @@ const PopularCar = () => {
           </h2>
           <hr className="my-6 w-2/4 mx-auto text-gray-300 " />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div>
+          <SwiperCarousel />
+        </div>
+
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {carData.map((car) => (
             <SingleCard
               key={car.id}
@@ -39,7 +40,7 @@ const PopularCar = () => {
               price={car.price}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

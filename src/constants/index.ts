@@ -94,7 +94,7 @@ export const steps = [
 export const carData = [
   {
     id: 1,
-    image: "https://i.ibb.co/kB1TPjz/1.png",
+    image: "https://i.ibb.co/Vq4txRm/sc.png",
     model: "Toyota Camry SE 350",
     rating: 4.5,
     transmission: "Auto",
@@ -107,7 +107,7 @@ export const carData = [
   },
   {
     id: 2,
-    image: "https://i.ibb.co/CQgd8zR/2.png",
+    image: "https://i.ibb.co/Vq4txRm/sc.png",
     model: "Toyota Camry SE 350",
     rating: 4.2,
     transmission: "Auto",
@@ -120,7 +120,7 @@ export const carData = [
   },
   {
     id: 3,
-    image: "https://i.ibb.co/XZxL0pB/3.png",
+    image: "https://i.ibb.co/Vq4txRm/sc.png",
     model: "Toyota Camry SE 350",
     rating: 4.7,
     transmission: "Auto",
@@ -133,7 +133,7 @@ export const carData = [
   },
   {
     id: 4,
-    image: "https://i.ibb.co/ZgnPKk3/4.png",
+    image: "https://i.ibb.co/Vq4txRm/sc.png",
     model: "Toyota Camry SE 350",
     rating: 4.0,
     transmission: "Auto",
@@ -146,7 +146,7 @@ export const carData = [
   },
   {
     id: 5,
-    image: "https://i.ibb.co/L5jD67Y/5.png",
+    image: "https://i.ibb.co/Vq4txRm/sc.png",
     model: "Toyota Camry SE 350",
     rating: 4.9,
     transmission: "Auto",
@@ -159,7 +159,7 @@ export const carData = [
   },
   {
     id: 6,
-    image: "https://i.ibb.co/RBkqd0r/car.png",
+    image: "https://i.ibb.co/Vq4txRm/sc.png",
     model: "Toyota Camry SE 350",
     rating: 4.3,
     transmission: "Auto",
