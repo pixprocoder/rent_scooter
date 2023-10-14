@@ -9,7 +9,7 @@ import { Button } from "../ui/button";
 
 const Footer = () => {
   return (
-    <footer className="  lg:h-[400px] bg-[#15213C]">
+    <footer className="banner-footer  lg:h-[400px] bg-[#15213C] bg-opacity-50">
       <div className="container mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-white pt-24">
           <div>

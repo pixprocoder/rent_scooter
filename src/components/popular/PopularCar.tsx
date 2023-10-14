@@ -1,6 +1,11 @@
 import { carData } from "@/src/constants";
 import SingleCard from "./SingleCard";
 import { TabsComponent } from "../shared/TabsComponent";
+import scooter1 from "../../assets/images/scooter/1.png";
+import scooter2 from "../../assets/images/scooter/2.png";
+import scooter3 from "../../assets/images/scooter/3.png";
+import scooter4 from "../../assets/images/scooter/4.png";
+import scooter5 from "../../assets/images/scooter/car.png";
 
 const PopularCar = () => {
   return (

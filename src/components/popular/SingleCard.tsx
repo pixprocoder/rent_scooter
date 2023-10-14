@@ -3,7 +3,7 @@ import { MdOutlineSpeed } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
 type Props = {
   id: number;
-  image: string;
+  image?: any;
   model: string;
   rating: number;
   transmission: string;
@@ -31,13 +31,11 @@ const SingleCard = ({
   return (
     <section className="card  bg-base-100 shadow-xl">
       <div className="relative">
-        <div className="overflow-hidden mx-10 rounded-lg">
+        <div className="overflow-hidden mx-10  h-[300px] rounded-lg">
           <img
             src={image}
             alt="Image"
-            // layout="fill"
-            // objectFit="cover"
-            className="transform  transition-transform duration-500 hover:scale-150"
+            className="transform w-full transition-transform duration-500 hover:scale-150"
           />
         </div>
       </div>

@@ -10,12 +10,12 @@ const HowItWorks = () => {
             <h2 className="text-3xl lg:text-5xl font-bold text-center text-green-700 mb-4">
               How It Works
             </h2>
-            <h2 className="text-white font-light text-center  mb-8">
+            <h2 className="text-gray-300 font-light text-center  mb-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Similique, nemo enim numquam <br /> distinctio eum earum mollitia
               ratione pariatur quibusdam, aperiam qui
             </h2>
-            <hr className="my-6 w-2/4 mx-auto " />
+            <hr className="my-6 w-2/4 mx-auto text-gray-300 " />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {steps.map((step) => (
@@ -32,9 +32,9 @@ const HowItWorks = () => {
                       height={60}
                     />
                   </div>
-                  <div className="text-center text-white">
+                  <div className="text-center text-gray-100">
                     <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                    <p>{step.description}</p>
+                    <p className="text-gray-300">{step.description}</p>
                   </div>
                 </div>
               </>

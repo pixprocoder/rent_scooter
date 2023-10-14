@@ -67,6 +67,15 @@ body {
   height: 100%;
   margin-left: calc(-50vw + 50%);
 }
+.banner-footer {
+  /* background-image: url("../public/images/bannerImg.jpg"); */
+  background-image: url("../assets/images/Icons/footer-bg.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
 
 /* TODO: apply this for mobile device later */
 @media only screen and (max-width: 600px) {

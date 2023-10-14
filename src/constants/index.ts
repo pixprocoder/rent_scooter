@@ -6,7 +6,7 @@ import pickup from "../assets/images/Icons/pickup.png";
 
 export const navLinks = [
   { href: "/", key: "Home" },
-  { href: "/", key: "About" },
+  { href: "#about", key: "About" },
   { href: "/", key: "Services" },
   { href: "/", key: "Contact Us" },
 ];
@@ -94,8 +94,7 @@ export const steps = [
 export const carData = [
   {
     id: 1,
-    image:
-      "https://images.pexels.com/photos/439405/pexels-photo-439405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://i.ibb.co/kB1TPjz/1.png",
     model: "Toyota Camry SE 350",
     rating: 4.5,
     transmission: "Auto",
@@ -108,8 +107,7 @@ export const carData = [
   },
   {
     id: 2,
-    image:
-      "https://images.pexels.com/photos/439405/pexels-photo-439405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://i.ibb.co/CQgd8zR/2.png",
     model: "Toyota Camry SE 350",
     rating: 4.2,
     transmission: "Auto",
@@ -122,9 +120,8 @@ export const carData = [
   },
   {
     id: 3,
-    image:
-      "https://images.pexels.com/photos/439405/pexels-photo-439405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    model: "Toyota Camry SE 450",
+    image: "https://i.ibb.co/XZxL0pB/3.png",
+    model: "Toyota Camry SE 350",
     rating: 4.7,
     transmission: "Auto",
     fuelType: "Petrol",
@@ -136,8 +133,7 @@ export const carData = [
   },
   {
     id: 4,
-    image:
-      "https://images.pexels.com/photos/439405/pexels-photo-439405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://i.ibb.co/ZgnPKk3/4.png",
     model: "Toyota Camry SE 350",
     rating: 4.0,
     transmission: "Auto",
@@ -150,9 +146,8 @@ export const carData = [
   },
   {
     id: 5,
-    image:
-      "https://images.pexels.com/photos/439405/pexels-photo-439405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    model: "Toyota Camry SE 550",
+    image: "https://i.ibb.co/L5jD67Y/5.png",
+    model: "Toyota Camry SE 350",
     rating: 4.9,
     transmission: "Auto",
     fuelType: "Petrol",
@@ -164,8 +159,7 @@ export const carData = [
   },
   {
     id: 6,
-    image:
-      "https://images.pexels.com/photos/439405/pexels-photo-439405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://i.ibb.co/RBkqd0r/car.png",
     model: "Toyota Camry SE 350",
     rating: 4.3,
     transmission: "Auto",

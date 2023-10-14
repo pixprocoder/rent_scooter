@@ -2,18 +2,15 @@
 import Image from "next/image";
 import logo from "../../assets/images/logo.svg";
 import Link from "next/link";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { RxCross1 } from "react-icons/rx";
-import { useState } from "react";
+
 import { navLinks } from "@/src/constants";
 import { ToggleNavbar } from "./ToggleNavbar";
 import { Button } from "../ui/button";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
   return (
-    <header className=" py-3  ">
-      <nav className="container mx-auto p-2 flex justify-between items-center   ">
+    <header className="  mb-6 mx-auto bg-black bg-opacity-20 z-10 ">
+      <nav className="container p-6 flex justify-between items-center   ">
         <div className="">
           <Link className="text-3xl font-bold" href="/">
             <p className="text-2xl font-bold text-green-800">CRIS RENT</p>
