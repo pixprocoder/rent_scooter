@@ -9,7 +9,7 @@ import Book from "../book/Book";
 
 const Hero = () => {
   return (
-    <section className="banner2 p-0">
+    <section className=" p-0">
       <div className=" flex justify-center items-center h-[800px]">
         <div className="container">
           <Book />

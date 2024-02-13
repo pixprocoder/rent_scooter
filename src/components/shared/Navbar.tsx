@@ -9,7 +9,7 @@ import { Button } from "../ui/button";
 
 const Navbar = () => {
   return (
-    <header className=" mx-auto bg-black bg-opacity-20 z-10 ">
+    <header className=" sticky top-0 mx-auto bg-black z-10 ">
       <nav className="container p-6 flex justify-between items-center   ">
         <div className="">
           <Link className="text-3xl font-bold" href="/">
@@ -37,6 +37,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <hr className="container mx-auto border-gray-900 border-opacity-75" />
     </header>
   );
 };
