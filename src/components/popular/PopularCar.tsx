@@ -5,7 +5,7 @@ import SwiperCarousel from "../shared/SwiperCarousel";
 
 const PopularCar = () => {
   return (
-    <section className="lg:my-20 my-8">
+    <section className="lg:my-20 my-8 container mx-auto p-2">
       <div>
         <div className="px-4 lg:px-0">
           <h2 className="text-3xl mt-10 lg:text-5xl font-header font-bold text-center text-white mb-4">

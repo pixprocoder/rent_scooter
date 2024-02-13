@@ -10,7 +10,7 @@ import WhyChooseUs from "../components/whyChooseUs/WhyChooseUs";
 
 export default function Home() {
   return (
-    <section className="container mx-auto p-2 pt-0 ">
+    <section className=" pt-0 ">
       <Hero />
       {/* <Book /> */}
       <PopularCar />

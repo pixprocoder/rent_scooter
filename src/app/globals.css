@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Jura&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
 
 .text-tertiary {
   color: #64ccc5;
@@ -42,6 +43,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Space Grotesk", sans-serif;
 }
 .font-header {
   font-family: "Jura", sans-serif;

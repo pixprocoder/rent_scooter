@@ -6,9 +6,10 @@ import pickup from "../assets/images/Icons/pickup.png";
 
 export const navLinks = [
   { href: "/", key: "Home" },
-  { href: "#about", key: "About" },
-  { href: "#service", key: "Services" },
-  { href: "#contact", key: "Contact Us" },
+  { href: "/car", key: "Cars" },
+  { href: "/service", key: "Services" },
+  { href: "/about", key: "About" },
+  { href: "/contact", key: "Contact Us" },
 ];
 
 export const whyChooseUs = [
