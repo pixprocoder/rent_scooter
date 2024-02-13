@@ -59,7 +59,6 @@ export function ToggleNavbar() {
           </DropdownMenuItem>
           <DropdownMenuItem>
             <div className="gap-2 flex">
-              <Button>SIGN IN</Button>
               <Button variant="outline">SIGN UP</Button>
             </div>
           </DropdownMenuItem>
