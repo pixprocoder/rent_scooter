@@ -5,18 +5,18 @@ import SwiperCarousel from "../shared/SwiperCarousel";
 
 const PopularCar = () => {
   return (
-    <section>
+    <section className="lg:my-20 my-8">
       <div>
         <div className="px-4 lg:px-0">
           <h2 className="text-3xl mt-10 lg:text-5xl font-header font-bold text-center text-white mb-4">
             Explore <span className="text-[#1ECB15]">Popular vehicles</span>
           </h2>
-          <h2 className=" font-light text-center font-body text-gray-300 mb-8">
+          <h2 className=" font-light text-sm text-center font-body text-gray-300 mb-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
             nemo enim numquam <br /> distinctio eum earum mollitia ratione
             pariatur quibusdam, aperiam qui
           </h2>
-          <hr className="my-6 w-2/4 mx-auto text-gray-300 " />
+          {/* <hr className="my-6 w-2/4 mx-auto text-gray-300 " /> */}
         </div>
 
         <div className="block sm:hidden">

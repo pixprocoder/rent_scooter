@@ -29,7 +29,7 @@ const SingleCard = ({
   price,
 }: Props) => {
   return (
-    <section className="card   bg-base-100 shadow-xl">
+    <section className="card   bg-gray-950 rounded-md shadow-xl">
       <div className="relative">
         <div className="overflow-hidden mx-10  h-[300px] rounded-lg">
           <img

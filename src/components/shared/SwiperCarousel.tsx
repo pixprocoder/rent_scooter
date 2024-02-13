@@ -22,7 +22,7 @@ const SwiperCarousel = () => {
       <Swiper watchSlidesProgress={true} slidesPerView={1} className="mySwiper">
         {carData.map((car) => (
           <SwiperSlide>
-            <div className=" flex flex-col justify-center items-center  shadow-lg">
+            <div className=" flex flex-col justify-center  items-center  shadow-lg">
               <div className="w-[350px] h-[200px]  overflow-hidden flex-1">
                 <AspectRatio ratio={16 / 9}>
                   <img

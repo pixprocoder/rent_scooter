@@ -13,8 +13,8 @@ export default function Home() {
     <section className="container mx-auto p-2 pt-0 ">
       <Hero />
       {/* <Book /> */}
-      <HowItWorks />
       <PopularCar />
+      <HowItWorks />
       <Services />
       <WhyChooseUs />
       <About />
