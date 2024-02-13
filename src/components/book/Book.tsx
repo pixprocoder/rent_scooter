@@ -40,9 +40,7 @@ const Book = () => {
             <h2 className="text-xl text-white font-bold my-2">Return Date</h2>
             <Picker option={"Date"} />
           </div>
-          <Button className="lg:w-full border border-[#1ECB15] bg-[#1ECB15] hover:bg-transparent font-bold transition-all duration-200 ">
-            Book Now
-          </Button>
+          <Button className="lg:w-full text-white ">Book Now</Button>
         </div>
       </div>
     </section>

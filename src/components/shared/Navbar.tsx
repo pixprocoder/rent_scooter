@@ -21,7 +21,7 @@ const Navbar = () => {
           <ul className="hidden lg:block ">
             {navLinks.map((link) => (
               <Link
-                className=" mr-6 text-white hover:text-[#1ECB15] "
+                className=" mr-6 text-gray-200 text-sm hover:border-b-2 hover:border-green-700  p-3 hover:text-white "
                 href={link.href}
                 key={link.key}
               >
