@@ -8,7 +8,7 @@ const HowItWorks = () => {
         <div className="container mx-auto">
           <div>
             <h2 className="text-3xl lg:text-5xl font-bold text-center text-white  mb-4">
-              How <span className="text-[#1ECB15]">It Works</span>
+              How <span className="text-[#1ECB15]">It Works_</span>
             </h2>
             <h2 className="text-gray-300 font-light text-center  mb-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
