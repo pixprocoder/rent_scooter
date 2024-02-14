@@ -9,7 +9,11 @@ import Book from "../book/Book";
 
 const Hero = () => {
   return (
-    <section className="bg-gray-900 bg-opacity-20  p-0">
+    <section className="bg-gray-900 bg-opacity-20  p-0 relative">
+      <div
+        className="absolute -bottom-1 right-[55vw] h-9 w-screen skew-x-[45deg] bg-black lg:right-[70vw] lg:h-24"
+        aria-hidden="true"
+      ></div>
       <div className=" flex justify-center items-center h-[800px]">
         <div className="container">
           <Book />
