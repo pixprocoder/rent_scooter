@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
+import ConvexClientProvider from "./ConvexClientProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main>
-          <Navbar />
-          {children}
-          <Footer />
-        </main>
+        <ConvexClientProvider>
+          {" "}
+          <main>
+            <Navbar />
+            {children}
+            <Footer />
+          </main>
+        </ConvexClientProvider>
       </body>
     </html>
   );
