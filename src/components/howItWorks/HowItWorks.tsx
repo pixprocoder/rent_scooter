@@ -33,7 +33,7 @@ const HowItWorks = () => {
                   </div>
                   <div className="text-center text-gray-100">
                     <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                    <p className="text-gray-300">{step.description}</p>
+                    {/* <p className="text-gray-300">{step.description}</p> */}
                   </div>
                 </div>
               </>

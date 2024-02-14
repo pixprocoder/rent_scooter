@@ -42,24 +42,25 @@ export function ToggleNavbar() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Menu</DropdownMenuLabel>
-        <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
             <Link href="/">Home</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="/">About</Link>
+            <Link href="/car">Cars</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="/">Book</Link>
+            <Link href="/service">Service</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="/service">About</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
             <Link href="/contact">Contact Us</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <div className="gap-2 flex">
-              <Button variant="outline">SIGN UP</Button>
+            <div className="">
+              <Button>SIGN UP</Button>
             </div>
           </DropdownMenuItem>
         </DropdownMenuGroup>
