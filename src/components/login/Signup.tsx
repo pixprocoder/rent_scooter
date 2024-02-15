@@ -72,10 +72,7 @@ const SignupPage = () => {
                         Login
                       </Link>
                     </span>
-                    <Button
-                      onClick={handleSubmit}
-                      className="bg-blue-500 hover:bg-blue-600"
-                    >
+                    <Button onClick={handleSubmit} className="">
                       Signup
                     </Button>
                   </div>
