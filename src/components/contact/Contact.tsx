@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className=" py-20 lg:py-[120px] overflow-hidden relative z-10"
+      className=" py-20 lg:py-[120px] overflow-hidden relative "
     >
       <div className="container">
         <div className="flex flex-wrap lg:justify-between -mx-4">
