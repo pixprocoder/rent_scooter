@@ -28,17 +28,6 @@ const LoginPage = () => {
           <div className="flex-1 w-full">
             <CardHeader className="">
               <div>
-                <div className="grid w-full max-w-sm items-center ">
-                  <Label className="text-white mb-1" htmlFor="name">
-                    Name
-                  </Label>
-                  <Input
-                    ref={nameRef}
-                    type="text"
-                    id="name"
-                    placeholder="Your name"
-                  />
-                </div>
                 <div className="grid w-full max-w-sm items-center my-4">
                   <Label className="text-white mb-1" htmlFor="email">
                     Email
@@ -67,13 +56,13 @@ const LoginPage = () => {
                 <div className="mt-2">
                   <div className="flex justify-between items-center">
                     <span className="text-white">
-                      Already have an account{" "}
+                      New to Cris-rent-srl?{" "}
                       <Link className="text-blue-500 underline" href="/signup">
                         Signup
                       </Link>
                     </span>
                     <Button onClick={handleSubmit} className="">
-                      Signup
+                      Login
                     </Button>
                   </div>
                 </div>

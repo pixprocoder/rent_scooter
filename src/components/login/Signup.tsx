@@ -67,7 +67,7 @@ const SignupPage = () => {
                 <div className="mt-2">
                   <div className="flex justify-between items-center">
                     <span className="text-white">
-                      Already have an account{" "}
+                      Already have an account?
                       <Link className="text-blue-500 underline" href="/login">
                         Login
                       </Link>

@@ -32,9 +32,9 @@ const Navbar = () => {
           <div className="lg:hidden block">
             <ToggleNavbar />
           </div>
-          <div className="hidden lg:flex gap-2 ">
+          <Link href="/signup" className="hidden lg:flex gap-2 ">
             <Button>SIGN UP</Button>
-          </div>
+          </Link>
         </div>
       </nav>
       <hr className="container mx-auto border-gray-900 border-opacity-75" />
