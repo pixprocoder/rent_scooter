@@ -4,6 +4,8 @@
 => node.js
 => Typescript
 => react icons
+convex
+database
 
 ## Steps
 
