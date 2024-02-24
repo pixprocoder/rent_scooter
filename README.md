@@ -27,4 +27,5 @@ database
 - so can u guess 😏
 - so I go further
 - now more
-- 
+- google map
+- lit of bikes
