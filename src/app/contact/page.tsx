@@ -1,9 +1,10 @@
+import Contact from "@/src/components/contact/Contact";
 import React from "react";
 
 const ContactPage = () => {
   return (
     <div className="container mx-auto">
-      <h1>Contact Page</h1>
+      <Contact />
     </div>
   );
 };
