@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
 import ConvexClientProvider from "./ConvexClientProvider";
+import { Providers } from "./provicers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,17 +19,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <ConvexClientProvider>
+    <Providers>
+      <html lang="en">
+        <body>
           {" "}
           <main>
             <Navbar />
             {children}
             <Footer />
           </main>
-        </ConvexClientProvider>
-      </body>
-    </html>
+        </body>
+      </html>
+    </Providers>
   );
 }
