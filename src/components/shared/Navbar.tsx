@@ -6,8 +6,11 @@ import Link from "next/link";
 import { navLinks } from "@/src/constants";
 import { ToggleNavbar } from "./ToggleNavbar";
 import { Button } from "../ui/button";
+import { useConvexAuth } from "convex/react";
 
 const Navbar = () => {
+  const { isLoading, isAuthenticated } = useConvexAuth();
+  console.log("navbar", isLoading, isAuthenticated);
   return (
     <header className=" sticky top-0 mx-auto bg-black z-10 ">
       <nav className="container p-6 flex justify-between items-center   ">
@@ -32,9 +35,15 @@ const Navbar = () => {
           <div className="lg:hidden block">
             <ToggleNavbar />
           </div>
-          <Link href="/signup" className="hidden lg:flex gap-2 ">
-            <Button>SIGN UP</Button>
-          </Link>
+          {isAuthenticated ? (
+            <Link href="/signup" className="hidden lg:flex gap-2 ">
+              <Button>SIGN OUT</Button>
+            </Link>
+          ) : (
+            <Link href="/signup" className="hidden lg:flex gap-2 ">
+              <Button>SIGN UP</Button>
+            </Link>
+          )}
         </div>
       </nav>
       <hr className="container mx-auto border-gray-900 border-opacity-75" />
