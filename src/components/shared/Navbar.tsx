@@ -1,16 +1,13 @@
 "use client";
-import Image from "next/image";
-import logo from "../../assets/images/logo.svg";
 import Link from "next/link";
 
 import { navLinks } from "@/src/constants";
-import { ToggleNavbar } from "./ToggleNavbar";
-import { Button } from "../ui/button";
 import { useConvexAuth } from "convex/react";
+import { Button } from "../ui/button";
+import { ToggleNavbar } from "./ToggleNavbar";
 
 const Navbar = () => {
   const { isLoading, isAuthenticated } = useConvexAuth();
-  console.log("navbar", isLoading, isAuthenticated);
   return (
     <header className=" sticky top-0 mx-auto bg-black z-10 ">
       <nav className="container p-6 flex justify-between items-center   ">
@@ -36,9 +33,7 @@ const Navbar = () => {
             <ToggleNavbar />
           </div>
           {isAuthenticated ? (
-            <Link href="/signup" className="hidden lg:flex gap-2 ">
-              <Button>SIGN OUT</Button>
-            </Link>
+            <Button>LOGOUT</Button>
           ) : (
             <Link href="/signup" className="hidden lg:flex gap-2 ">
               <Button>SIGN UP</Button>

@@ -15,5 +15,9 @@ export  const createScooter = mutation({
     args:{name: v.string(), price: v.number()},
     handler: async (ctx, args) =>{
         const newScooterId = await ctx.db.insert("scooter", {name: args.name, price: args.price})
+        return newScooterId
     }
 })
+
+
+// user info

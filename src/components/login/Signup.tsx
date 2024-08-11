@@ -16,9 +16,9 @@ const SignupPage = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const handleSubmit = () => {
-    const name = nameRef.current.value;
-    const email = emailRef.current.value;
-    const password = passwordRef.current.value;
+    // const name = nameRef.current.value;
+    // const email = emailRef.current.value;
+    // const password = passwordRef.current.value;
   };
   return (
     <section className="min-h-screen flex justify-center items-center flex-row-reverse">
