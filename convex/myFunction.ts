@@ -18,6 +18,7 @@ export  const createScooter = mutation({
         return newScooterId
     }
 })
+    
 
 
 // user info

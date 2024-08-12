@@ -14,6 +14,7 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
+import type * as messages from "../messages.js";
 import type * as myFunction from "../myFunction.js";
 import type * as schma from "../schma.js";
 import type * as scooters from "../scooters.js";
@@ -28,6 +29,7 @@ import type * as tasks from "../tasks.js";
  * ```
  */
 declare const fullApi: ApiFromModules<{
+  messages: typeof messages;
   myFunction: typeof myFunction;
   schma: typeof schma;
   scooters: typeof scooters;
