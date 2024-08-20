@@ -11,7 +11,7 @@ import WhyChooseUs from "../components/whyChooseUs/WhyChooseUs";
 export default function Home() {
   return (
     <section className=" pt-0 text-white ">
-      <Hero />
+      {/* <Hero /> */}
       {/* <Book /> */}
       <PopularCar />
       <HowItWorks />
