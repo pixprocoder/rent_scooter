@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="container p-6 flex justify-between items-center   ">
         <div className="">
           <Link className="text-3xl font-bold" href="/">
-            <p className="text-2xl font-bold text-green-500">CRIS RENT SRL</p>
+            <p className="text-2xl font-bold text-green-500">KIRIS RENT SRL</p>
           </Link>
         </div>
 
