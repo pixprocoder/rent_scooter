@@ -12,14 +12,11 @@ import { SiGithub, SiGoogle } from "react-icons/si";
 import { useContext, useRef } from "react";
 
 const LoginPage = () => {
-  const nameRef = useRef();
-  const emailRef = useRef();
-  const passwordRef = useRef();
-  const handleSubmit = () => {
-    const name = nameRef.current.value;
-    const email = emailRef.current.value;
-    const password = passwordRef.current.value;
-  };
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const onSubmit = data => console.log(data);
+
+
+
   return (
     <section className="min-h-screen flex justify-center items-center flex-row-reverse">
       <div className="">
@@ -27,7 +24,7 @@ const LoginPage = () => {
         <Card className="bg-gray-950 border border-gray-800 w-full flex justify-between items-center flex-col-reverse lg:flex-row">
           <div className="flex-1 w-full">
             <CardHeader className="">
-              <div>
+              <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="grid w-full max-w-sm items-center my-4">
                   <Label className="text-white mb-1" htmlFor="email">
                     Email
@@ -66,7 +63,7 @@ const LoginPage = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </form>
             </CardHeader>
             <div className="flex w-28 justify-center items-centers mx-auto">
               {/* <Separator className="my-4" /> */}

@@ -10,16 +10,11 @@ import { Label } from "@/src/components/ui/label";
 
 import { SiGithub, SiGoogle } from "react-icons/si";
 import { useContext, useRef } from "react";
+import {useForm} from "react-hook-form";
 
 const SignupPage = () => {
-  const nameRef = useRef();
-  const emailRef = useRef();
-  const passwordRef = useRef();
-  const handleSubmit = () => {
-    // const name = nameRef.current.value;
-    // const email = emailRef.current.value;
-    // const password = passwordRef.current.value;
-  };
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const onSubmit = data => console.log(data);
   return (
     <section className="min-h-screen flex justify-center items-center flex-row-reverse">
       <div className="">
@@ -27,13 +22,13 @@ const SignupPage = () => {
         <Card className="bg-gray-950 border border-gray-800 w-full flex justify-between items-center flex-col-reverse lg:flex-row">
           <div className="flex-1 w-full">
             <CardHeader className="">
-              <div>
+              <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="grid w-full max-w-sm items-center ">
                   <Label className="text-white mb-1" htmlFor="name">
                     Name
                   </Label>
                   <Input
-                    ref={nameRef}
+                      {...register("Name", { required: true })}
                     type="text"
                     id="name"
                     placeholder="Your name"
@@ -44,7 +39,7 @@ const SignupPage = () => {
                     Email
                   </Label>
                   <Input
-                    ref={emailRef}
+                      {...register("email", { required: true })}
                     type="email"
                     required
                     id="email"
@@ -57,7 +52,7 @@ const SignupPage = () => {
                     Password
                   </Label>
                   <Input
-                    ref={passwordRef}
+                      {...register("password", { required: true })}
                     required
                     type="password"
                     id="password"
@@ -72,12 +67,12 @@ const SignupPage = () => {
                         Login
                       </Link>
                     </span>
-                    <Button onClick={handleSubmit} className="">
+                    <Button type="submit" className="">
                       Signup
                     </Button>
                   </div>
                 </div>
-              </div>
+              </form>
             </CardHeader>
             <div className="flex w-28 justify-center items-centers mx-auto">
               {/* <Separator className="my-4" /> */}
