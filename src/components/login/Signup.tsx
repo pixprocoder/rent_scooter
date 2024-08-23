@@ -1,20 +1,26 @@
 "use client";
-import { Button } from "@/src/components/ui/button";
-import { Card, CardFooter, CardHeader } from "@/src/components/ui/card";
-import { Input } from "@/src/components/ui/input";
+import {Button} from "@/src/components/ui/button";
+import {Card, CardFooter, CardHeader} from "@/src/components/ui/card";
+import {Input} from "@/src/components/ui/input";
 import Image from "next/image";
 import Link from "next/link";
 import loginImg from "../../assets/images/login.svg";
-
-import { Label } from "@/src/components/ui/label";
-
-import { SiGithub, SiGoogle } from "react-icons/si";
-import { useContext, useRef } from "react";
+import {Label} from "@/src/components/ui/label";
+import {SiGithub, SiGoogle} from "react-icons/si";
 import {useForm} from "react-hook-form";
 
+
+interface IUserForm  {
+  name: string;
+  email: string;
+  password: string;
+}
+
 const SignupPage = () => {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
+  const { register, handleSubmit,  formState: { errors } } = useForm();
+  const onSubmit = (data: IUserForm) => {
+    console.log(data);
+  };
   return (
     <section className="min-h-screen flex justify-center items-center flex-row-reverse">
       <div className="">
@@ -61,9 +67,9 @@ const SignupPage = () => {
                 </div>
                 <div className="mt-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-white">
+                    <span className="text-white text-sm">
                       Already have an account?
-                      <Link className="text-blue-500 underline" href="/login">
+                      <Link className="text-blue-500 underline ml-2" href="/login">
                         Login
                       </Link>
                     </span>

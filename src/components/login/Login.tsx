@@ -1,19 +1,25 @@
 "use client";
-import { Button } from "@/src/components/ui/button";
-import { Card, CardFooter, CardHeader } from "@/src/components/ui/card";
-import { Input } from "@/src/components/ui/input";
+import {Button} from "@/src/components/ui/button";
+import {Card, CardFooter, CardHeader} from "@/src/components/ui/card";
+import {Input} from "@/src/components/ui/input";
 import Image from "next/image";
 import Link from "next/link";
 import loginImg from "../../assets/images/login.svg";
+import {Label} from "@/src/components/ui/label";
+import {SiGithub, SiGoogle} from "react-icons/si";
+import {useForm} from "react-hook-form";
 
-import { Label } from "@/src/components/ui/label";
 
-import { SiGithub, SiGoogle } from "react-icons/si";
-import { useContext, useRef } from "react";
+interface ILoginUser {
+  email: string;
+  password: string;
+}
 
 const LoginPage = () => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
+  const onSubmit = (data: ILoginUser) => {
+    console.log(data);
+  };
 
 
 
@@ -30,7 +36,7 @@ const LoginPage = () => {
                     Email
                   </Label>
                   <Input
-                    ref={emailRef}
+                      {...register("email", { required: true })}
                     type="email"
                     required
                     id="email"
@@ -43,7 +49,7 @@ const LoginPage = () => {
                     Password
                   </Label>
                   <Input
-                    ref={passwordRef}
+                      {...register("password", { required: true })}
                     required
                     type="password"
                     id="password"
@@ -58,7 +64,7 @@ const LoginPage = () => {
                         Signup
                       </Link>
                     </span>
-                    <Button onClick={handleSubmit} className="">
+                    <Button type="submit" className="">
                       Login
                     </Button>
                   </div>
