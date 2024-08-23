@@ -10,15 +10,9 @@ import {SiGithub, SiGoogle} from "react-icons/si";
 import {useForm} from "react-hook-form";
 
 
-interface IUserForm  {
-  name: string;
-  email: string;
-  password: string;
-}
-
 const SignupPage = () => {
   const { register, handleSubmit,  formState: { errors } } = useForm();
-  const onSubmit = (data: IUserForm) => {
+  const onSubmit = (data: any) => {
     console.log(data);
   };
   return (

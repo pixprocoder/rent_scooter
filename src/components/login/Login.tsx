@@ -8,21 +8,22 @@ import loginImg from "../../assets/images/login.svg";
 import {Label} from "@/src/components/ui/label";
 import {SiGithub, SiGoogle} from "react-icons/si";
 import {useForm} from "react-hook-form";
+import {useUser} from "@clerk/nextjs";
 
 
-interface ILoginUser {
-  email: string;
-  password: string;
-}
 
 const LoginPage = () => {
+  const {user} = useUser()
+  console.log(user)
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = (data: ILoginUser) => {
+  const onSubmit = (data: any) => {
     console.log(data);
   };
 
 
 
+  // @ts-ignore
+  // @ts-ignore
   return (
     <section className="min-h-screen flex justify-center items-center flex-row-reverse">
       <div className="">

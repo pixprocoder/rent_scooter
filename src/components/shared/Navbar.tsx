@@ -5,9 +5,13 @@ import { navLinks } from "@/src/constants";
 import { useConvexAuth } from "convex/react";
 import { Button } from "../ui/button";
 import { ToggleNavbar } from "./ToggleNavbar";
+import {Avatar, AvatarFallback, AvatarImage} from "@radix-ui/react-avatar";
+import {useUser} from "@clerk/nextjs";
 
 const Navbar = () => {
   const { isLoading, isAuthenticated } = useConvexAuth();
+  const {user} = useUser()
+  console.log(user)
   return (
     <header className=" sticky top-0 mx-auto bg-black z-10 ">
       <nav className="container p-6 flex justify-between items-center   ">
@@ -33,7 +37,11 @@ const Navbar = () => {
             <ToggleNavbar />
           </div>
           {isAuthenticated ? (
-            <Button>LOGOUT</Button>
+              <Avatar>
+                <AvatarImage width={30} height={30} src={user?.imageUrl
+                } alt="@shadcn" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
           ) : (
             <Link href="/signup" className="hidden lg:flex gap-2 ">
               <Button>SIGN UP</Button>
