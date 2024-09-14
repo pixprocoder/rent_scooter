@@ -21,7 +21,7 @@ const ScooterCard = ({ scooter }) => {
         className="h-48 w-full object-cover"
       />
       <div className="p-4">
-        <h3 className="mb-2 text-xl font-semibold text-gray-100">
+        <h3 className="mb-2 text-xl font-semibold text-gray-100"
           {scooter.name}
         </h3>
         <div className="mb-2 flex items-center">
