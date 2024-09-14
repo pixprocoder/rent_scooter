@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaStar, FaMapMarkerAlt, FaMotorcycle } from "react-icons/fa";
 
-const ScooterCard = ({ scooter }) => {
+const ScooterCard = ({ scooter }: { scooter: any }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -21,7 +21,7 @@ const ScooterCard = ({ scooter }) => {
         className="h-48 w-full object-cover"
       />
       <div className="p-4">
-        <h3 className="mb-2 text-xl font-semibold text-gray-100"
+        <h3 className="mb-2 text-xl font-semibold text-gray-100">
           {scooter.name}
         </h3>
         <div className="mb-2 flex items-center">

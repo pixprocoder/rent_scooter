@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { RiEBike2Line } from "react-icons/ri";
+
 import {
   AiOutlineHome,
   AiOutlineInfoCircle,
@@ -18,11 +20,11 @@ const Navbar = () => {
   };
 
   const menuItems = [
-    { name: "Home", icon: <AiOutlineHome /> },
-    { name: "Vehicle", icon: <AiOutlineHome /> },
-    { name: "About", icon: <AiOutlineInfoCircle /> },
-    { name: "Blog", icon: <AiOutlineRead /> },
-    { name: "Contact Us", icon: <AiOutlineContacts /> },
+    { name: "Home", href: "/", icon: <AiOutlineHome /> },
+    { name: "Vehicle", href: "/scooters", icon: <RiEBike2Line /> },
+    { name: "About", href: "/about", icon: <AiOutlineInfoCircle /> },
+    { name: "Blog", href: "/blog", icon: <AiOutlineRead /> },
+    { name: "Contact Us", href: "/contact", icon: <AiOutlineContacts /> },
   ];
 
   const menuVariants = {
@@ -46,7 +48,7 @@ const Navbar = () => {
               {menuItems.map((item) => (
                 <a
                   key={item.name}
-                  href={`#${item.name.toLowerCase()}`}
+                  href={`${item.href}`}
                   className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 focus:outline-none focus:bg-gray-700 transition duration-150 ease-in-out"
                   aria-label={item.name}
                 >

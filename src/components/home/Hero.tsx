@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 
@@ -40,8 +41,10 @@ const HeroSection = () => {
           className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50"
           onClick={() => console.log("Explore scooters clicked")}
         >
-          <FaSearch className="inline-block mr-2" />
-          Explore Scooters
+          <Link href="/scooters">
+            <FaSearch className="inline-block mr-2" />
+            Explore Scooters
+          </Link>
         </button>
       </div>
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
