@@ -1,10 +1,20 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaStar, FaMapMarkerAlt, FaMotorcycle } from "react-icons/fa";
 
 const ScooterCard = ({ scooter }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="overflow-hidden rounded-lg bg-gray-800 shadow-lg transition-all duration-300 hover:scale-105">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="500"
+      className="overflow-hidden rounded-lg bg-gray-800 shadow-lg transition-all duration-300 hover:scale-105"
+    >
       <img
         src={scooter.image}
         alt={scooter.name}

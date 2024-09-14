@@ -23,6 +23,7 @@
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.7",
     "add": "^2.0.6",
+    "aos": "^2.3.4",
     "aso": "^1.1.1",
     "autoprefixer": "10.4.14",
     "class-variance-authority": "^0.7.0",
@@ -46,5 +47,8 @@
     "tailwindcss-animate": "^1.0.7",
     "typescript": "5.1.6",
     "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7"
   }
 }
