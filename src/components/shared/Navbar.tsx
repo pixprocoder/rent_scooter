@@ -8,6 +8,7 @@ import {
   AiOutlineContacts,
 } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,7 @@ const Navbar = () => {
 
   const menuItems = [
     { name: "Home", icon: <AiOutlineHome /> },
+    { name: "Vehicle", icon: <AiOutlineHome /> },
     { name: "About", icon: <AiOutlineInfoCircle /> },
     { name: "Blog", icon: <AiOutlineRead /> },
     { name: "Contact Us", icon: <AiOutlineContacts /> },
@@ -34,7 +36,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <span className="text-xl font-bold">KIRISRENTSERVICE</span>
+              <Link href="/" className="text-xl font-bold text-[#1ECB15]">
+                KIRISRENTSERVICE
+              </Link>
             </div>
           </div>
           <div className="hidden md:block">

@@ -9,7 +9,7 @@ const PopularCar = () => {
       id: 1,
       name: "City Cruiser",
       rating: 4.8,
-      location: "Downtown",
+      location: "Bucharest",
       image:
         "https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     },
@@ -17,7 +17,7 @@ const PopularCar = () => {
       id: 2,
       name: "Beach Rider",
       rating: 4.5,
-      location: "Coastal Area",
+      location: "Bucharest",
       image:
         "https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     },
@@ -25,7 +25,31 @@ const PopularCar = () => {
       id: 3,
       name: "Mountain Explorer",
       rating: 4.7,
-      location: "Hillside",
+      location: "Bucharest",
+      image:
+        "https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    },
+    {
+      id: 4,
+      name: "Mountain Explorer",
+      rating: 4.7,
+      location: "Bucharest",
+      image:
+        "https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    },
+    {
+      id: 5,
+      name: "Mountain Explorer",
+      rating: 4.7,
+      location: "Bucharest",
+      image:
+        "https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    },
+    {
+      id: 6,
+      name: "Mountain Explorer",
+      rating: 4.7,
+      location: "Bucharest",
       image:
         "https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     },
