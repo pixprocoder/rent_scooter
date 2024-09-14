@@ -1,9 +1,35 @@
 "use client";
 import { carData } from "@/src/constants";
-import SingleCard from "./SingleCard";
 import SwiperCarousel from "../shared/SwiperCarousel";
+import ScooterCard from "./SingleCard";
 
 const PopularCar = () => {
+  const scooters = [
+    {
+      id: 1,
+      name: "City Cruiser",
+      rating: 4.8,
+      location: "Downtown",
+      image:
+        "https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    },
+    {
+      id: 2,
+      name: "Beach Rider",
+      rating: 4.5,
+      location: "Coastal Area",
+      image:
+        "https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    },
+    {
+      id: 3,
+      name: "Mountain Explorer",
+      rating: 4.7,
+      location: "Hillside",
+      image:
+        "https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    },
+  ];
   return (
     <section className="lg:my-20 my-8 container mx-auto p-2">
       <div>
@@ -19,26 +45,9 @@ const PopularCar = () => {
           {/* <hr className="my-6 w-2/4 mx-auto text-gray-300 " /> */}
         </div>
 
-        <div className="block sm:hidden">
-          <SwiperCarousel />
-        </div>
-
-        <div className=" hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {carData.map((car) => (
-            <SingleCard
-              key={car.id}
-              id={car.id}
-              image={car.image}
-              model={car.model}
-              rating={car.rating}
-              transmission={car.transmission}
-              fuelType={car.fuelType}
-              power={car.power}
-              year={car.year}
-              capacity={car.capacity}
-              location={car.location}
-              price={car.price}
-            />
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {scooters?.map((scooter) => (
+            <ScooterCard key={scooter.id} scooter={scooter} />
           ))}
         </div>
       </div>

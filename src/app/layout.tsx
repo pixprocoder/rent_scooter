@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
-import ConvexClientProvider from "./ConvexClientProvider";
-import { Providers } from "./provicers";
+import ConvexClientProvider from "./Providers";
+import { ConvexProvider } from "convex/react";
+import Providers from "./Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
